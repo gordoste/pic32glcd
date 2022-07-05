@@ -20,9 +20,10 @@ typedef enum {
     GLCD_NONE
 } screen_type_t;
 
-void GLCD_Initialize(screen_type_t);
-void GLCD_ClearScreen();
-void GLCD_WriteBufToScreen();
+
+void GLCD_Initialize(screen_type_t);            // Initialize the screen. Call this before anything else
+void GLCD_ClearScreen();                        // Clear the screen
+void GLCD_WriteBufToScreen();                   // Write the buffer to screen
 
 #ifdef ST7920_SUPPORT
 void BufCopy_KS0108_to_ST7920(uint16_t *dst_st7920, unsigned char *src_ks0108);
