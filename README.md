@@ -31,6 +31,13 @@ GLCD_Invert_buf(KS0108Buf, 12,12, 70,40); // Invert a rectangular section of the
 GLCD_WriteBufToScreen();               // Write to screen
 ```
 
+### Creating menus
+
+Often these LCDs are used for displaying basic UIs like menus. A menu can quickly be created by doing the following:
+1. Divide the screen into a grid - each box will be a menu item. Make sure each box has a height that is a multiple of 8. If your menu needs to scroll then all boxes must be the same size.
+2. Draw a bitmap for each menu item and put it as a static const in your code using [image2cpp](http://javl.github.io/image2cpp/). Choose "Vertical - 1 bit per pixel" for the draw mode.
+3. When showing your menu on screen, just write each bitmap in the appropriate position, and then invert the selected menu item before writing to the screen.
+
 ## Example
 
 The example MPLAB X project in the firmware directory shows how to draw graphics using the library. The schematic below shows how a board can support both boards. JP3 should be connected to GND for ST7920, and should be connected to VOUT (output of the voltage doubler) for KS0108. Personally, I prefer to use 20-pin IDC connectors for the LCD cable (with a small SIL-to-DIL adapter board soldered to the screen).
