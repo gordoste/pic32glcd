@@ -21,7 +21,7 @@
 #define KS0108_DATA_DIRN_OUT()    (TRISJCLR = 0x00FF)
 #define KS0108_DATA_INPUT()       (PORTJ & 0x00FF)
 #define KS0108_DATA_OUTPUT(d)     {LATJCLR = 0x00FF; LATJSET = d;}
-#define KS0108_CTRL_DIRN_OUT()    {TRISHCLR = (1<<13)&(1<<14)&(1<<15); TRISKCLR = (1<<7); TRISDCLR = (1<<6)&(1<<7);}
+#define KS0108_CTRL_DIRN_OUT()    {TRISHCLR = (1<<13)|(1<<14)|(1<<15); TRISKCLR = (1<<7); TRISDCLR = (1<<6)|(1<<7);}
 #define KS0108_RST_HIGH()         (LATKSET = (1<<7)) // RST -> K7
 #define KS0108_RST_LOW()          (LATKCLR = (1<<7))
 #define KS0108_E_HIGH()           (LATHSET = (1<<15)) // E -> H15
