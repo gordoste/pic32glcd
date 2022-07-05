@@ -1,0 +1,4 @@
+dist/
+debug/
+build/
+.generated_files/

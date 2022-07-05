@@ -1,0 +1,14 @@
+configName: default
+folderName: example
+format_version: v1.0
+frameworkPath: E:\harmony3
+processor: PIC32MZ1024EFH144
+projectName: example
+settings:
+  PackageFilter: bsp;core;core_apps_pic32mz_ef;csp;csp_apps_pic32mz_ef;dev_packs;harmony-services;quick_docs;reference_apps;usb
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\PIC32MZ-EF_DFP\1.3.58\atdf\PIC32MZ1024EFH144.atdf
