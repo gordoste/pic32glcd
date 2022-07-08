@@ -26,51 +26,21 @@ void GLCD_ClearRegion_buf(unsigned char * buf, unsigned char x1, unsigned char y
 void GLCD_ClearScreen_buf(unsigned char * buf);
 
 //-------------------------------------------------------------------------------------------------
-// GLCD_WriteChar_8x5_buf
-// Write a 8x5 character (charToWrite) to the buffer (buf) at a specified position (x,y)
+// GLCD_WriteChar_HxW_buf
+// Write a HxW character (charToWrite) to the buffer (buf) at a specified position (x,y)
 //-------------------------------------------------------------------------------------------------
 void GLCD_WriteChar_8x5_buf(unsigned char * buf, unsigned char charToWrite, unsigned char x, unsigned char y);
-
-//-------------------------------------------------------------------------------------------------
-// GLCD_WriteChar_12x7_buf
-// Write a 12x7 character (charToWrite) to the buffer (buf) at a specified position (x,y)
-//-------------------------------------------------------------------------------------------------
 void GLCD_WriteChar_12x7_buf(unsigned char * buf, unsigned char charToWrite, unsigned char x, unsigned char y);
-
-//-------------------------------------------------------------------------------------------------
-// GLCD_WriteChar_16x11_buf
-// Write a 16x11 character (charToWrite) to the buffer (buf) at a specified position (x,y)
-//-------------------------------------------------------------------------------------------------
 void GLCD_WriteChar_16x11_buf(unsigned char * buf, unsigned char charToWrite, unsigned char x, unsigned char y);
-
-//-------------------------------------------------------------------------------------------------
-// GLCD_WriteChar_16x10_buf
-// Write a 16x10 character (charToWrite) to the buffer (buf) at a specified position (x,y)
-//-------------------------------------------------------------------------------------------------
 void GLCD_WriteChar_16x10_buf(unsigned char * buf, unsigned char charToWrite, unsigned char x, unsigned char y);
 
 //-------------------------------------------------------------------------------------------------
-// GLCD_WriteString_16x11_buf
-// Write a 16x11 string (stringToWrite) to the buffer (buf) at a specified position (x,y)
+// GLCD_WriteString_HxW_buf
+// Write a HxW string (stringToWrite) to the buffer (buf) at a specified position (x,y)
 //-------------------------------------------------------------------------------------------------
 void GLCD_WriteString_16x11_buf(unsigned char * buf, char * stringToWrite, unsigned char x, unsigned char y);
-
-//-------------------------------------------------------------------------------------------------
-// GLCD_WriteString_16x10_buf
-// Write a 16x10 string (stringToWrite) to the buffer (buf) at a specified position (x,y)
-//-------------------------------------------------------------------------------------------------
 void GLCD_WriteString_16x10_buf(unsigned char * buf, char * stringToWrite, unsigned char x, unsigned char y);
-
-//-------------------------------------------------------------------------------------------------
-// GLCD_WriteString_12x7_buf
-// Write a 12x7 string (stringToWrite) to the buffer (buf) at a specified position (x,y)
-//-------------------------------------------------------------------------------------------------
 void GLCD_WriteString_12x7_buf(unsigned char * buf, char * stringToWrite, unsigned char x, unsigned char y);
-
-//-------------------------------------------------------------------------------------------------
-// GLCD_WriteString_8x5_buf
-// Write a 8x5 string (stringToWrite) to the buffer (buf) at a specified position (x,y)
-//-------------------------------------------------------------------------------------------------
 void GLCD_WriteString_8x5_buf(unsigned char * buf, char * stringToWrite, unsigned char x, unsigned char y);
 
 //-------------------------------------------------------------------------------------------------
