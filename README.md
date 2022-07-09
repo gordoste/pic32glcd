@@ -49,3 +49,5 @@ The example MPLAB X project in the firmware directory shows how to draw graphics
 KS0108 driver originally written by [Radosław Kwiecień](https://en.radzio.dxp.pl/ks0108/). Used with permission for non-commercial/educational purposes.
 
 ST7920 driver originally written by [M.J. Bauer](https://github.com/M-J-Bauer/OLED-or-LCD-128x64-graphics-library). Used with permission.
+
+Circuit courtesy of Phil Prosser.
