@@ -40,14 +40,16 @@ Often these LCDs are used for displaying basic UIs like menus. A menu can quickl
 
 ## Example
 
-The example MPLAB X project in the firmware directory shows how to draw graphics using the library. The schematic below shows how a board can support both boards. JP3 should be connected to GND for ST7920, and should be connected to VOUT (output of the voltage doubler) for KS0108. Personally, I prefer to use 20-pin IDC connectors for the LCD cable (with a small SIL-to-DIL adapter board soldered to the screen).
+The example MPLAB X project in the firmware directory shows how to draw graphics using the library. The schematic below shows how a board can support both boards. JP3 and the potentiometer control the constrast. JP3 at GND makes the potentiometer range from GND to VCC, whereas setting it to VEE makes the pot range from VCC to VOUT (the output of the controller's onboard voltage doubler). You may need to experiment to get the right constrast setting, but I find JP3 to GND works best for ST7920 whereas VEE works best for KS0108. I prefer to use 20-pin IDC connectors for the LCD cable (with a small SIL-to-DIL adapter board soldered to the screen).
 
 ![Example schematic](firmware/pic32glcd_wiring.png)
  
 ## Credits
 
+The actual drivers and drawing code is mostly other people's - I just added an abstraction layer to allow projects to support both.
+
 KS0108 driver originally written by [Radosław Kwiecień](https://en.radzio.dxp.pl/ks0108/). Used with permission for non-commercial/educational purposes.
 
 ST7920 driver originally written by [M.J. Bauer](https://github.com/M-J-Bauer/OLED-or-LCD-128x64-graphics-library). Used with permission.
 
-Circuit courtesy of Phil Prosser.
+Drawing functions and circuit by Phil Prosser.
