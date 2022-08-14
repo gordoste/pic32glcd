@@ -40,7 +40,7 @@ Often these LCDs are used for displaying basic UIs like menus. A menu can quickl
 
 ## Example
 
-The example MPLAB X project in the firmware directory shows how to draw graphics using the library. The schematic below shows how a board can support both boards. JP3 and the potentiometer control the constrast. JP3 at GND makes the potentiometer range from GND to VCC, whereas setting it to VEE makes the pot range from VCC to VOUT (the output of the controller's onboard voltage doubler). You may need to experiment to get the right constrast setting, but I find JP3 to GND works best for ST7920 whereas VEE works best for KS0108. I prefer to use 20-pin IDC connectors for the LCD cable (with a small SIL-to-DIL adapter board soldered to the screen).
+The example MPLAB X project in the firmware directory shows how to draw graphics using the library. The schematic below shows how a board can support LCDs based around both controllers. JP3 and the potentiometer control the constrast. JP3 at GND makes the potentiometer range from GND to VCC, whereas setting it to VEE makes the pot range from VCC to VOUT (the output of the controller's onboard voltage doubler). You may need to experiment to get the right constrast setting, but I find JP3 to GND works best for ST7920 whereas VEE works best for KS0108. I prefer to use 20-pin IDC connectors for the LCD cable (with a small SIL-to-DIL adapter board soldered to the screen).
 
 ![Example schematic](firmware/pic32glcd_wiring.png)
  
